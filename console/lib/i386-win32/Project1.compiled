@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\FPC\3.0.4\bin\i386-Win32\fpc.exe" Date="1262918680"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq -FiC:\Users\andregoro\Documents\GitHub\pascal\console\lib\i386-win32 -FuC:\Users\andregoro\Documents\GitHub\pascal\console\ -FUC:\Users\andregoro\Documents\GitHub\pascal\console\lib\i386-win32\ -FEC:\Users\andregoro\Documents\GitHub\pascal\console\ -oC:\Users\andregoro\Documents\GitHub\pascal\console\Project1.exe Project1.pas"/>
+</CONFIG>
