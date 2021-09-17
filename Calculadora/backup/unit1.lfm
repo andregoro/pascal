@@ -1,0 +1,149 @@
+object FormCalculator: TFormCalculator
+  Left = 608
+  Height = 321
+  Top = 344
+  Width = 628
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Calculation Simple'
+  ClientHeight = 321
+  ClientWidth = 628
+  Position = poScreenCenter
+  LCLVersion = '2.0.8.0'
+  object Edit1: TEdit
+    Left = 32
+    Height = 23
+    Top = 48
+    Width = 80
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 32
+    Height = 23
+    Top = 160
+    Width = 80
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 15
+    Top = 24
+    Width = 69
+    Caption = 'First Number'
+    ParentColor = False
+  end
+  object op: TLabel
+    Left = 56
+    Height = 45
+    Top = 80
+    Width = 22
+    Caption = '+'
+    Color = clDefault
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -32
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label3: TLabel
+    Left = 32
+    Height = 15
+    Top = 136
+    Width = 86
+    Caption = 'Second Number'
+    ParentColor = False
+  end
+  object Resultado: TButton
+    Left = 32
+    Height = 25
+    Top = 280
+    Width = 75
+    Caption = 'Resultado'
+    OnClick = ResultadoClick
+    TabOrder = 2
+  end
+  object Limpar: TButton
+    Left = 272
+    Height = 25
+    Top = 280
+    Width = 75
+    Caption = 'Limpar'
+    OnClick = LimparClick
+    TabOrder = 3
+  end
+  object Sair: TButton
+    Left = 504
+    Height = 25
+    Top = 280
+    Width = 75
+    Caption = 'Sair'
+    OnClick = SairClick
+    TabOrder = 4
+  end
+  object Operacao: TRadioGroup
+    Left = 272
+    Height = 185
+    Top = 48
+    Width = 313
+    AutoFill = True
+    Caption = 'Operacao'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 165
+    ClientWidth = 309
+    OnMouseEnter = OperacaoMouseEnter
+    TabOrder = 5
+    object soma: TRadioButton
+      Left = 6
+      Height = 42
+      Top = 0
+      Width = 297
+      Caption = 'soma'
+      TabOrder = 0
+    end
+    object sub: TRadioButton
+      Left = 6
+      Height = 42
+      Top = 42
+      Width = 297
+      Caption = 'sub'
+      OnChange = subChange
+      TabOrder = 1
+    end
+    object multiplicao: TRadioButton
+      Left = 6
+      Height = 42
+      Top = 84
+      Width = 297
+      Caption = 'multiplicao'
+      TabOrder = 2
+    end
+    object divisao: TRadioButton
+      Left = 6
+      Height = 39
+      Top = 126
+      Width = 297
+      Caption = 'divisao'
+      TabOrder = 3
+    end
+  end
+  object res: TLabel
+    Left = 32
+    Height = 37
+    Top = 208
+    Width = 80
+    AutoSize = False
+    Font.Height = -27
+    ParentColor = False
+    ParentFont = False
+  end
+end
